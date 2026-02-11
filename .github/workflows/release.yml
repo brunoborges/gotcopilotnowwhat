@@ -25,11 +25,27 @@ jobs:
         with:
           node-version: '22'
 
+      - name: Cache Playwright
+        id: cache-playwright
+        uses: actions/cache@v5
+        with:
+          path: |
+            node_modules
+            ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('node_modules/playwright/package.json') }}
+          restore-keys: |
+            playwright-${{ runner.os }}-
+
       - name: Install Playwright
+        if: steps.cache-playwright.outputs.cache-hit != 'true'
         run: |
           npm init -y
           npm install playwright
           npx playwright install chromium --with-deps
+
+      - name: Install Chromium system deps
+        if: steps.cache-playwright.outputs.cache-hit == 'true'
+        run: npx playwright install-deps chromium
 
       - name: Take screenshots
         run: |
@@ -94,11 +110,27 @@ jobs:
         with:
           node-version: '22'
 
+      - name: Cache Playwright
+        id: cache-playwright
+        uses: actions/cache@v5
+        with:
+          path: |
+            node_modules
+            ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('node_modules/playwright/package.json') }}
+          restore-keys: |
+            playwright-${{ runner.os }}-
+
       - name: Install Playwright
+        if: steps.cache-playwright.outputs.cache-hit != 'true'
         run: |
           npm init -y
           npm install playwright
           npx playwright install chromium --with-deps
+
+      - name: Install Chromium system deps
+        if: steps.cache-playwright.outputs.cache-hit == 'true'
+        run: npx playwright install-deps chromium
 
       - name: Generate PDF
         run: |
