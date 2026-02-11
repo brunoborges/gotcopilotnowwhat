@@ -24,10 +24,10 @@ jobs:
     
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Setup Pages configuration
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
 
       - name: Create deployment directory
         run: |
@@ -36,7 +36,7 @@ jobs:
           cp styles.css _site/
       
       - name: Upload HTML artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: '_site'
 

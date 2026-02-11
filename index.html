@@ -3,192 +3,374 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Copilot Pro/Pro+ - Getting Started Guide</title>
+    <title>Got Copilot, Now What? — Your Guide to GitHub Copilot Pro/Pro+</title>
+    <meta name="description" content="Discover everything you can do with GitHub Copilot Pro and Pro+. From IDE extensions to CLI agents, coding agents, and the Copilot SDK — it's way more than autocomplete.">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://github.githubassets.com/favicons/favicon.svg" type="image/svg+xml">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>🚀 GitHub Copilot Pro/Pro+</h1>
-            <p>Your Complete Guide to AI-Powered Development</p>
-        </header>
 
-        <div class="content">
-            <div class="intro">
-                <h2>Welcome to GitHub Copilot Pro/Pro+!</h2>
-                <p>
-                    Congratulations on gaining access to GitHub Copilot Pro or Pro+! You now have access to the most advanced AI-powered coding assistant available. 
-                    This guide will help you understand all the powerful features and tools at your disposal, from coding agents to multiple AI models, 
-                    and how to use them across your favorite development environments.
-                </p>
-            </div>
-
-            <div class="section">
-                <h2>🤖 Copilot Coding Agents</h2>
-                <p>
-                    GitHub Copilot Coding Agents are specialized AI assistants that can help you with complex development tasks. 
-                    These agents go beyond simple code completion to provide intelligent assistance throughout your development workflow.
-                </p>
-                <h3>What Can Coding Agents Do?</h3>
-                <ul>
-                    <li><strong>Code Generation:</strong> Generate entire functions, classes, or modules based on natural language descriptions</li>
-                    <li><strong>Code Review:</strong> Analyze your code for potential issues, bugs, and improvements</li>
-                    <li><strong>Refactoring:</strong> Suggest and implement code refactoring to improve quality and maintainability</li>
-                    <li><strong>Testing:</strong> Generate comprehensive test cases and test suites</li>
-                    <li><strong>Documentation:</strong> Create detailed documentation for your code</li>
-                    <li><strong>Bug Fixing:</strong> Identify and fix bugs with intelligent suggestions</li>
-                </ul>
-                <p><a href="https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent" target="_blank" rel="noopener noreferrer">📚 Learn more about Copilot Agents →</a></p>
-            </div>
-
-            <div class="section">
-                <h2>💻 GitHub Copilot CLI</h2>
-                <p>
-                    GitHub Copilot CLI is a standalone, AI-powered terminal agent that brings Copilot directly to your command line.
-                    Using natural language prompts, it can explain code, suggest and generate scripts, explore your codebase, and automate tasks—all within your terminal.
-                </p>
-                <h3>Key Features:</h3>
-                <ul>
-                    <li><strong>Natural Language Prompts:</strong> Interact conversationally—ask questions and give instructions in plain English</li>
-                    <li><strong>Code Explanation:</strong> Get clear explanations of complex commands, scripts, and code</li>
-                    <li><strong>Script Generation:</strong> Generate shell scripts, commands, and automation from descriptions</li>
-                    <li><strong>Codebase Exploration:</strong> Navigate and understand your project's structure and logic</li>
-                    <li><strong>Context Awareness:</strong> Copilot CLI understands your repo and project context for more relevant suggestions</li>
-                </ul>
-                <h3>Getting Started:</h3>
-                <p>Install Copilot CLI via npm, Homebrew, or WinGet, then start using it:</p>
-                <ul>
-                    <li><code>copilot "explain this bash script"</code> - Explain code or commands</li>
-                    <li><code>copilot "write a script to check disk space"</code> - Generate scripts from prompts</li>
-                </ul>
-                <p><a href="https://docs.github.com/en/copilot/how-tos/copilot-cli" target="_blank" rel="noopener noreferrer">📖 Learn more about GitHub Copilot CLI →</a></p>
-            </div>
-
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h3>📝 Visual Studio Code</h3>
-                    <ul>
-                        <li>Inline code suggestions</li>
-                        <li>Chat interface</li>
-                        <li>Code actions and refactoring</li>
-                        <li>Test generation</li>
-                        <li>Workspace context awareness</li>
-                        <li>Multi-file editing</li>
-                    </ul>
-                    <a href="https://docs.github.com/en/copilot/managing-copilot/configure-personal-settings/installing-the-github-copilot-extension-in-your-environment?tool=vscode" target="_blank" rel="noopener noreferrer">Install for VS Code →</a>
-                </div>
-
-                <div class="feature-card">
-                    <h3>🔧 IntelliJ IDEA</h3>
-                    <ul>
-                        <li>Smart code completion</li>
-                        <li>Context-aware suggestions</li>
-                        <li>Integrated chat panel</li>
-                        <li>Refactoring assistance</li>
-                        <li>Language-specific optimizations</li>
-                        <li>Framework support</li>
-                    </ul>
-                    <a href="https://docs.github.com/en/copilot/managing-copilot/configure-personal-settings/installing-the-github-copilot-extension-in-your-environment?tool=jetbrains" target="_blank" rel="noopener noreferrer">Install for IntelliJ →</a>
-                </div>
-
-                <div class="feature-card">
-                    <h3>🌙 Eclipse IDE</h3>
-                    <ul>
-                        <li>Real-time code suggestions</li>
-                        <li>Java-focused optimizations</li>
-                        <li>Project context awareness</li>
-                        <li>Integration with Eclipse tools</li>
-                        <li>Code review assistance</li>
-                        <li>Documentation generation</li>
-                    </ul>
-                    <a href="https://docs.github.com/en/copilot/managing-copilot/configure-personal-settings/installing-the-github-copilot-extension-in-your-environment?tool=eclipse" target="_blank" rel="noopener noreferrer">Install for Eclipse →</a>
-                </div>
-
-                <div class="feature-card">
-                    <h3>🍎 Xcode</h3>
-                    <ul>
-                        <li>Swift and Objective-C support</li>
-                        <li>iOS/macOS development assistance</li>
-                        <li>SwiftUI code generation</li>
-                        <li>API integration help</li>
-                        <li>UI code suggestions</li>
-                        <li>Protocol implementation</li>
-                    </ul>
-                    <a href="https://docs.github.com/en/copilot/managing-copilot/configure-personal-settings/installing-the-github-copilot-extension-in-your-environment?tool=xcode" target="_blank" rel="noopener noreferrer">Install for Xcode →</a>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2>🔌 GitHub Copilot SDKs</h2>
-                <p>
-                    GitHub Copilot SDKs allow you to integrate Copilot's capabilities into your own tools and workflows, 
-                    particularly for CLI applications and custom development tools.
-                </p>
-                <h3>SDK Features:</h3>
-                <ul>
-                    <li><strong>Programmatic Access:</strong> Integrate Copilot into your custom tools and scripts</li>
-                    <li><strong>CLI Extensions:</strong> Build custom command-line tools powered by Copilot</li>
-                    <li><strong>API Integration:</strong> Connect Copilot to your development pipeline</li>
-                    <li><strong>Custom Workflows:</strong> Create automated workflows with AI assistance</li>
-                    <li><strong>Language Support:</strong> SDKs available for multiple programming languages</li>
-                </ul>
-                <p><a href="https://github.com/github/copilot-sdk" target="_blank" rel="noopener noreferrer">🔗 Explore the Copilot SDK →</a></p>
-            </div>
-
-            <div class="section">
-                <h2>🧠 Available AI Models</h2>
-                <p>
-                    With GitHub Copilot Pro/Pro+, you have access to multiple state-of-the-art AI models from leading providers. 
-                    Each model has unique strengths, and you can choose the best one for your specific task.
-                </p>
-                
-                <div class="models-grid">
-                    <div class="model-card">
-                        <h4>Claude (Anthropic)</h4>
-                        <p>Excellent for complex reasoning and detailed explanations</p>
-                    </div>
-                    <div class="model-card">
-                        <h4>Claude Sonnet</h4>
-                        <p>Balanced performance for general coding tasks</p>
-                    </div>
-                    <div class="model-card">
-                        <h4>Claude Opus</h4>
-                        <p>Most capable model for challenging problems</p>
-                    </div>
-                    <div class="model-card">
-                        <h4>GPT (OpenAI)</h4>
-                        <p>Versatile model for various coding tasks</p>
-                    </div>
-                    <div class="model-card">
-                        <h4>Codex (OpenAI)</h4>
-                        <p>Specialized for code generation and completion</p>
-                    </div>
-                    <div class="model-card">
-                        <h4>Gemini (Google)</h4>
-                        <p>Advanced multimodal capabilities</p>
-                    </div>
-                </div>
-
-                <h3 style="margin-top: 30px;">Choosing the Right Model:</h3>
-                <ul>
-                    <li><strong>For code completion:</strong> Codex or GPT</li>
-                    <li><strong>For complex problem-solving:</strong> Claude Opus or Gemini</li>
-                    <li><strong>For balanced performance:</strong> Claude Sonnet or GPT</li>
-                    <li><strong>For detailed explanations:</strong> Claude or Gemini</li>
-                </ul>
-                <p><a href="https://docs.github.com/en/copilot/reference/ai-models/model-comparison" target="_blank" rel="noopener noreferrer">🤖 Learn about AI models in Copilot →</a></p>
-            </div>
-
-            <div class="cta-section">
-                <h2>Ready to Get Started?</h2>
-                <p>Install GitHub Copilot in your favorite IDE and start coding with AI assistance!</p>
-                <a href="https://github.com/features/copilot" class="btn" target="_blank">Get Started with GitHub Copilot</a>
+    <!-- Hero -->
+    <header class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <p class="hero-badge">GitHub Copilot Pro / Pro+</p>
+            <h1>You Got GitHub Copilot...<br><span class="gradient-text">Now What?</span></h1>
+            <p class="hero-subtitle">You just unlocked the most powerful AI coding platform on the planet.<br>It's <em>way</em> more than autocomplete in VS Code. Here's everything you can do.</p>
+            <div class="hero-cta">
+                <a href="#where" class="btn btn-primary">Explore Where to Use It ↓</a>
+                <a href="#models" class="btn btn-secondary">See the AI Models</a>
             </div>
         </div>
+    </header>
 
-        <footer>
-            <p>&copy; 2026 GitHub Copilot Pro/Pro+ Guide | Empowering Developers with AI</p>
-        </footer>
-    </div>
+    <!-- Myth Buster -->
+    <section class="myth-section">
+        <div class="container">
+            <div class="myth-card">
+                <div class="myth-icon">💡</div>
+                <div class="myth-content">
+                    <h2>The #1 Misconception</h2>
+                    <p><strong>"GitHub Copilot is just a VS Code plugin."</strong> — Not anymore. Your subscription gives you an AI pair programmer in <em>your terminal</em>, on <em>github.com</em>, across <em>6 IDEs</em>, through <em>coding agents</em> that open PRs for you, and via an <em>SDK</em> to build your own AI tools. Let's break it down.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Where to Use Copilot -->
+    <section id="where" class="section-dark">
+        <div class="container">
+            <h2 class="section-title">Where Can You Use Copilot?</h2>
+            <p class="section-subtitle">Your subscription works across all of these — pick your favorites.</p>
+
+            <!-- Coding Agents on GitHub.com -->
+            <div class="feature-highlight">
+                <div class="feature-highlight-content">
+                    <span class="feature-tag">NEW — Autonomous AI</span>
+                    <h3>Coding Agents on GitHub.com</h3>
+                    <p>Assign a GitHub Issue to Copilot and it will autonomously write code, create a branch, open a pull request, and iterate based on your review — all without leaving github.com. You can also use <strong>Claude</strong> and <strong>OpenAI Codex</strong> as coding agents directly on GitHub.</p>
+                    <ul class="feature-list">
+                        <li>Assign issues directly to <code>@copilot</code></li>
+                        <li>Multi-agent support: Copilot, Claude, Codex side by side</li>
+                        <li>Runs in sandboxed GitHub Actions environments</li>
+                        <li>Full code review workflow — you stay in control</li>
+                    </ul>
+                    <a href="https://github.com/features/copilot/agents" target="_blank" rel="noopener noreferrer" class="link-arrow">Explore Coding Agents →</a>
+                    <a href="https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent" target="_blank" rel="noopener noreferrer" class="link-arrow link-secondary">Read the Docs →</a>
+                </div>
+                <div class="feature-highlight-visual">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <span class="terminal-dot red"></span>
+                            <span class="terminal-dot yellow"></span>
+                            <span class="terminal-dot green"></span>
+                            <span class="terminal-title">github.com — Issue #42</span>
+                        </div>
+                        <div class="terminal-body">
+                            <p class="t-comment"># You assign the issue to @copilot</p>
+                            <p><span class="t-prompt">→</span> <span class="t-cmd">Copilot</span> analyzes the codebase...</p>
+                            <p><span class="t-prompt">→</span> Creates branch <span class="t-string">copilot/fix-42</span></p>
+                            <p><span class="t-prompt">→</span> Writes code, adds tests</p>
+                            <p><span class="t-prompt">→</span> Opens <span class="t-string">Pull Request #43</span></p>
+                            <p><span class="t-prompt">→</span> <span class="t-success">Ready for your review ✓</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copilot CLI -->
+            <div class="feature-highlight reverse">
+                <div class="feature-highlight-content">
+                    <span class="feature-tag">Terminal Agent</span>
+                    <h3>GitHub Copilot in the CLI</h3>
+                    <p>A full AI agent right in your terminal. Ask questions in natural language, generate scripts, explore codebases, delegate tasks, and even create pull requests — all without leaving the command line.</p>
+                    <ul class="feature-list">
+                        <li>Natural language coding and scripting</li>
+                        <li>Repo-aware: understands your project context</li>
+                        <li>Custom agents for team-specific workflows</li>
+                        <li>Delegate tasks with <code>/delegate</code></li>
+                        <li>Works headlessly in CI/CD pipelines</li>
+                    </ul>
+                    <a href="https://github.com/features/copilot/cli" target="_blank" rel="noopener noreferrer" class="link-arrow">Get Copilot CLI →</a>
+                </div>
+                <div class="feature-highlight-visual">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <span class="terminal-dot red"></span>
+                            <span class="terminal-dot yellow"></span>
+                            <span class="terminal-dot green"></span>
+                            <span class="terminal-title">Terminal</span>
+                        </div>
+                        <div class="terminal-body">
+                            <p><span class="t-prompt">$</span> <span class="t-cmd">copilot</span> <span class="t-string">"find all API endpoints that lack authentication and add middleware"</span></p>
+                            <p class="t-comment"># Copilot scans your codebase...</p>
+                            <p><span class="t-prompt">→</span> Found 3 unprotected routes</p>
+                            <p><span class="t-prompt">→</span> Adding auth middleware...</p>
+                            <p><span class="t-prompt">→</span> Writing tests...</p>
+                            <p><span class="t-prompt">→</span> <span class="t-success">Done. Review changes? [y/n]</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IDE Grid -->
+            <h3 class="subsection-title" id="ides">In Your Favorite Editor</h3>
+            <p class="section-subtitle">Inline completions, chat, agent mode, plan mode, multi-file edits, and more — in every major IDE.</p>
+
+            <div class="ide-grid">
+                <a href="https://code.visualstudio.com/docs/copilot/overview" target="_blank" rel="noopener noreferrer" class="ide-card">
+                    <div class="ide-icon">
+                        <img src="https://code.visualstudio.com/favicon.ico" alt="VS Code" width="40" height="40" loading="lazy">
+                    </div>
+                    <h4>Visual Studio Code</h4>
+                    <p>The flagship experience. Inline suggestions, Copilot Chat, Agent mode, Edits, and the deepest integration.</p>
+                    <span class="ide-link">Get started →</span>
+                </a>
+
+                <a href="https://plugins.jetbrains.com/plugin/17718-github-copilot--your-ai-pair-programmer" target="_blank" rel="noopener noreferrer" class="ide-card">
+                    <div class="ide-icon">
+                        <img src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.svg" alt="JetBrains" width="40" height="40" loading="lazy">
+                    </div>
+                    <h4>JetBrains IDEs</h4>
+                    <p>IntelliJ IDEA, PyCharm, WebStorm, and more. Full Chat, Agent mode, Plan mode, and MCP support.</p>
+                    <span class="ide-link">Install plugin →</span>
+                </a>
+
+                <a href="https://visualstudio.microsoft.com/github-copilot/" target="_blank" rel="noopener noreferrer" class="ide-card">
+                    <div class="ide-icon">
+                        <img src="https://visualstudio.microsoft.com/wp-content/uploads/2021/10/Product-Icon.svg" alt="Visual Studio" width="40" height="40" loading="lazy">
+                    </div>
+                    <h4>Visual Studio</h4>
+                    <p>Native integration for C#, .NET, C++. Copilot Edits for multi-file changes and full agent workflows.</p>
+                    <span class="ide-link">Get started →</span>
+                </a>
+
+                <a href="https://marketplace.eclipse.org/content/github-copilot#details" target="_blank" rel="noopener noreferrer" class="ide-card">
+                    <div class="ide-icon">
+                        <img src="https://www.eclipse.org/favicon.ico" alt="Eclipse" width="40" height="40" loading="lazy">
+                    </div>
+                    <h4>Eclipse IDE</h4>
+                    <p>AI completions, Chat, Agent mode, and Plan mode for Java and enterprise development workflows.</p>
+                    <span class="ide-link">Install plugin →</span>
+                </a>
+
+                <a href="https://github.com/github/CopilotForXcode" target="_blank" rel="noopener noreferrer" class="ide-card">
+                    <div class="ide-icon">
+                        <img src="https://developer.apple.com/assets/elements/icons/xcode/xcode-96x96_2x.png" alt="Xcode" width="40" height="40" loading="lazy">
+                    </div>
+                    <h4>Xcode</h4>
+                    <p>Swift, Objective-C, SwiftUI. Inline completions, Agent mode, and Chat for Apple platform development.</p>
+                    <span class="ide-link">Install extension →</span>
+                </a>
+
+                <a href="https://github.com/features/copilot/cli" target="_blank" rel="noopener noreferrer" class="ide-card ide-card-accent">
+                    <div class="ide-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+                    </div>
+                    <h4>Terminal / CLI</h4>
+                    <p>A full agentic AI in your terminal. Natural language coding, task delegation, and CI/CD automation.</p>
+                    <span class="ide-link">Install CLI →</span>
+                </a>
+            </div>
+
+            <!-- SDK -->
+            <div class="feature-highlight sdk-highlight">
+                <div class="feature-highlight-content">
+                    <span class="feature-tag">For Builders</span>
+                    <h3>Copilot SDK — Build Your Own AI Tools</h3>
+                    <p>Embed Copilot's agentic runtime into <em>any</em> application. The SDK exposes the same multi-turn execution engine that powers Copilot CLI — with support for Node.js, Python, Go, and .NET.</p>
+                    <ul class="feature-list">
+                        <li>Agentic execution loop with tool orchestration</li>
+                        <li>Multi-model support (GPT, Claude, Gemini)</li>
+                        <li>Custom tools and domain-specific skills</li>
+                        <li>MCP integration for enterprise services</li>
+                    </ul>
+                    <a href="https://github.blog/news-insights/company-news/build-an-agent-into-any-app-with-the-github-copilot-sdk/" target="_blank" rel="noopener noreferrer" class="link-arrow">Learn about the SDK →</a>
+                </div>
+                <div class="feature-highlight-visual">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <span class="terminal-dot red"></span>
+                            <span class="terminal-dot yellow"></span>
+                            <span class="terminal-dot green"></span>
+                            <span class="terminal-title">your-app.ts</span>
+                        </div>
+                        <div class="terminal-body code-block">
+                            <p><span class="t-keyword">import</span> { CopilotClient } <span class="t-keyword">from</span> <span class="t-string">"@github/copilot-sdk"</span>;</p>
+                            <p>&nbsp;</p>
+                            <p><span class="t-keyword">const</span> client = <span class="t-keyword">new</span> <span class="t-cmd">CopilotClient</span>();</p>
+                            <p><span class="t-keyword">await</span> client.<span class="t-cmd">start</span>();</p>
+                            <p>&nbsp;</p>
+                            <p><span class="t-keyword">const</span> session = <span class="t-keyword">await</span> client.<span class="t-cmd">createSession</span>({</p>
+                            <p>&nbsp;&nbsp;model: <span class="t-string">"claude-sonnet-4.5"</span></p>
+                            <p>});</p>
+                            <p>&nbsp;</p>
+                            <p><span class="t-keyword">await</span> session.<span class="t-cmd">send</span>({</p>
+                            <p>&nbsp;&nbsp;prompt: <span class="t-string">"Analyze merged PRs"</span></p>
+                            <p>});</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Models -->
+    <section id="models" class="section-gradient">
+        <div class="container">
+            <h2 class="section-title light">Your Subscription, Multiple AI Brains</h2>
+            <p class="section-subtitle light">With Copilot Pro/Pro+, you're not locked into one model. Choose the best AI for each task.</p>
+
+            <div class="models-grid">
+                <div class="model-card">
+                    <div class="model-logo">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    </div>
+                    <h4>Google Gemini</h4>
+                    <p>Multimodal reasoning, large context windows, and strong analytical capabilities.</p>
+                    <span class="model-badge">Gemini 3 Pro</span>
+                </div>
+
+                <div class="model-card">
+                    <div class="model-logo">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+                    </div>
+                    <h4>Anthropic Claude</h4>
+                    <p>Exceptional reasoning, safety-focused, and excellent for complex multi-step problems.</p>
+                    <span class="model-badge">Sonnet · Opus</span>
+                </div>
+
+                <div class="model-card">
+                    <div class="model-logo">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                    </div>
+                    <h4>OpenAI GPT</h4>
+                    <p>Versatile general-purpose models for coding, chat, analysis, and creative tasks.</p>
+                    <span class="model-badge">GPT-4o · GPT-5</span>
+                </div>
+
+                <div class="model-card">
+                    <div class="model-logo">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+                    </div>
+                    <h4>OpenAI Codex</h4>
+                    <p>Purpose-built for code. Autonomous agent that can write, test, and iterate on code.</p>
+                    <span class="model-badge">Codex · Coding Agent</span>
+                </div>
+            </div>
+
+            <div class="models-note">
+                <p>💡 <strong>Pro</strong> includes 300 premium requests/month. <strong>Pro+</strong> gives you 1,500 premium requests and early access to the latest models. <a href="https://docs.github.com/en/copilot/get-started/plans" target="_blank" rel="noopener noreferrer">Compare plans →</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- What can you actually do? -->
+    <section class="section-dark">
+        <div class="container">
+            <h2 class="section-title">What Can You Actually Do?</h2>
+            <p class="section-subtitle">Here are the core capabilities available across all Copilot surfaces.</p>
+
+            <div class="capabilities-grid">
+                <div class="capability-card">
+                    <div class="capability-icon">⚡</div>
+                    <h4>Code Completion</h4>
+                    <p>Real-time suggestions as you type. Multi-line completions, function bodies, boilerplate — it just flows.</p>
+                </div>
+                <div class="capability-card">
+                    <div class="capability-icon">💬</div>
+                    <h4>Chat &amp; Ask</h4>
+                    <p>Ask questions about your code, get explanations, debug errors, and brainstorm solutions in natural language.</p>
+                </div>
+                <div class="capability-card">
+                    <div class="capability-icon">🤖</div>
+                    <h4>Agent Mode</h4>
+                    <p>Give Copilot a high-level task and it plans, executes, edits files, runs commands, and fixes errors autonomously.</p>
+                </div>
+                <div class="capability-card">
+                    <div class="capability-icon">📋</div>
+                    <h4>Plan Mode</h4>
+                    <p>Describe what you want to build. Copilot creates a step-by-step implementation blueprint for your review before writing code.</p>
+                </div>
+                <div class="capability-card">
+                    <div class="capability-icon">✏️</div>
+                    <h4>Multi-File Edits</h4>
+                    <p>Copilot Edits can refactor, rename, and restructure code across multiple files in one go.</p>
+                </div>
+                <div class="capability-card">
+                    <div class="capability-icon">🔍</div>
+                    <h4>Code Review</h4>
+                    <p>Get AI-powered review suggestions on your pull requests. Catches bugs, suggests improvements, and explains changes.</p>
+                </div>
+                <div class="capability-card">
+                    <div class="capability-icon">🧪</div>
+                    <h4>Test Generation</h4>
+                    <p>Automatically generate unit tests, integration tests, and edge cases for your functions and classes.</p>
+                </div>
+                <div class="capability-card">
+                    <div class="capability-icon">📖</div>
+                    <h4>Documentation</h4>
+                    <p>Generate docstrings, README files, API docs, and inline comments that actually make sense.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Start -->
+    <section class="section-light">
+        <div class="container">
+            <h2 class="section-title dark">Get Started in 60 Seconds</h2>
+            <div class="quickstart-grid">
+                <div class="quickstart-step">
+                    <div class="step-number">1</div>
+                    <h4>Choose Your Surface</h4>
+                    <p>Pick an IDE, the CLI, or github.com — your Copilot subscription works everywhere.</p>
+                </div>
+                <div class="quickstart-step">
+                    <div class="step-number">2</div>
+                    <h4>Install &amp; Sign In</h4>
+                    <p>Install the extension or CLI, sign in with your GitHub account, and you're ready.</p>
+                </div>
+                <div class="quickstart-step">
+                    <div class="step-number">3</div>
+                    <h4>Pick a Model</h4>
+                    <p>Choose between GPT, Claude, Gemini, or Codex — each optimized for different tasks.</p>
+                </div>
+                <div class="quickstart-step">
+                    <div class="step-number">4</div>
+                    <h4>Start Building</h4>
+                    <p>Type, chat, delegate. Let Copilot handle the tedious parts while you focus on what matters.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Your AI Pair Programmer Is Ready.</h2>
+            <p>You've got the subscription. Now use it everywhere.</p>
+            <div class="cta-buttons">
+                <a href="https://github.com/features/copilot" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Explore GitHub Copilot</a>
+                <a href="https://docs.github.com/en/copilot" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Read the Docs</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Built for developers who just got Copilot and want to know what's possible.</p>
+            <p class="footer-links">
+                <a href="https://github.com/features/copilot/plans" target="_blank" rel="noopener noreferrer">Plans &amp; Pricing</a>
+                <span>·</span>
+                <a href="https://docs.github.com/en/copilot" target="_blank" rel="noopener noreferrer">Documentation</a>
+                <span>·</span>
+                <a href="https://github.com/features/copilot/cli" target="_blank" rel="noopener noreferrer">Copilot CLI</a>
+                <span>·</span>
+                <a href="https://github.com/features/copilot/agents" target="_blank" rel="noopener noreferrer">Coding Agents</a>
+            </p>
+        </div>
+    </footer>
+
 </body>
 </html>
