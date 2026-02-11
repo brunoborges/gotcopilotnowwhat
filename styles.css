@@ -126,6 +126,17 @@ header p {
     border: 1px solid #30363d;
 }
 
+.section a {
+    color: #58a6ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.section a:hover {
+    color: #79c0ff;
+    text-decoration: underline;
+}
+
 .models-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -199,6 +210,20 @@ header p {
     color: #3fb950;
     font-weight: bold;
     margin-right: 8px;
+}
+
+.feature-card a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #58a6ff;
+    text-decoration: none;
+    font-size: 0.95em;
+    transition: color 0.3s ease;
+}
+
+.feature-card a:hover {
+    color: #79c0ff;
+    text-decoration: underline;
 }
 
 .cta-section {
