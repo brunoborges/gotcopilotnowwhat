@@ -155,7 +155,7 @@ header p {
 
 .model-card p {
     font-size: 0.95em;
-    opacity: 0.9;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .features-grid {
@@ -219,6 +219,7 @@ header p {
 .cta-section p {
     font-size: 1.2em;
     margin-bottom: 25px;
+    color: white;
 }
 
 .btn {
