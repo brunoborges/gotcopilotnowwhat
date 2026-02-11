@@ -2,8 +2,6 @@
 
 A single-page guide for developers who already have a GitHub Copilot subscription and want to discover everything they can do with it.
 
-**Live site:** [gotcopilotnowwhat.github.io](https://gotcopilotnowwhat.github.io)
-
 ## Why this page?
 
 GitHub's official page at [github.com/features/copilot](https://github.com/features/copilot) is a **marketing and sales page**. It's designed to convince you to buy — enterprise logos, customer success stories, pricing tiers, FAQs, and a Trust Center. It answers: **"Why should I get Copilot?"**
