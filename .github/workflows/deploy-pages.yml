@@ -35,6 +35,7 @@ jobs:
           HASH=$(git rev-parse --short HEAD)
           sed "s/__CACHE_BUST__/$HASH/g" index.html > _site/index.html
           cp styles.css _site/
+          cp -r images _site/
       
       - name: Upload HTML artifact
         uses: actions/upload-pages-artifact@v4
