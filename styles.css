@@ -48,8 +48,8 @@ header p {
     padding: 30px;
     border-radius: 8px;
     margin-bottom: 40px;
-    border-left: 4px solid #667eea;
     border: 1px solid #30363d;
+    border-left: 4px solid #667eea;
 }
 
 .intro h2 {
@@ -139,6 +139,7 @@ header p {
     padding: 20px;
     border-radius: 8px;
     text-align: center;
+    box-shadow: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -212,6 +213,7 @@ header p {
 .cta-section h2 {
     font-size: 2em;
     margin-bottom: 15px;
+    color: white;
 }
 
 .cta-section p {
