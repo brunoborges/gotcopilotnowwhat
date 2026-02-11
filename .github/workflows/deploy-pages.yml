@@ -32,7 +32,8 @@ jobs:
       - name: Create deployment directory
         run: |
           mkdir -p _site
-          cp index.html _site/
+          HASH=$(git rev-parse --short HEAD)
+          sed "s/__CACHE_BUST__/$HASH/g" index.html > _site/index.html
           cp styles.css _site/
       
       - name: Upload HTML artifact
