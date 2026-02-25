@@ -116,6 +116,48 @@
                 </div>
             </div>
 
+            <!-- Agentic Workflows -->
+            <div class="feature-highlight" id="agentic">
+                <div class="feature-highlight-content">
+                    <span class="feature-tag">NEW — Continuous AI</span>
+                    <h3>GitHub Agentic Workflows</h3>
+                    <p>Author repository automation in plain <strong>Markdown</strong> — no YAML required. Describe what you want to happen, compile it with the <code>gh aw</code> CLI, and let an AI agent (Copilot, Claude, or Codex) handle the rest on a schedule or trigger.</p>
+                    <ul class="feature-list">
+                        <li>Write automations in natural language Markdown files</li>
+                        <li>Compile to GitHub Actions with <code>gh aw compile</code></li>
+                        <li>Continuous AI: issue triage, doc upkeep, PR review, and more</li>
+                        <li>Security-first: sandboxed execution, read-only by default</li>
+                        <li>Choose your agent: Copilot CLI, Claude, or OpenAI Codex</li>
+                    </ul>
+                    <a href="https://github.github.com/gh-aw/" target="_blank" rel="noopener noreferrer" class="link-arrow">Explore Agentic Workflows →</a>
+                    <a href="https://github.blog/ai-and-ml/automate-repository-tasks-with-github-agentic-workflows/" target="_blank" rel="noopener noreferrer" class="link-arrow link-secondary">Read the Blog Post →</a>
+                </div>
+                <div class="feature-highlight-visual">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <span class="terminal-dot red"></span>
+                            <span class="terminal-dot yellow"></span>
+                            <span class="terminal-dot green"></span>
+                            <span class="terminal-title">.github/workflows/triage.md</span>
+                        </div>
+                        <div class="terminal-body">
+                            <p class="t-comment">---</p>
+                            <p><span class="t-cmd">name:</span> <span class="t-string">Daily Issue Triage</span></p>
+                            <p><span class="t-cmd">on:</span> <span class="t-string">schedule: "0 9 * * *"</span></p>
+                            <p><span class="t-cmd">agent:</span> <span class="t-string">copilot</span></p>
+                            <p><span class="t-cmd">permissions:</span> <span class="t-string">[issues: write]</span></p>
+                            <p class="t-comment">---</p>
+                            <p>&nbsp;</p>
+                            <p>Triage all open issues with no labels.</p>
+                            <p>Add labels and a brief summary comment.</p>
+                            <p>&nbsp;</p>
+                            <p><span class="t-prompt">$</span> <span class="t-cmd">gh aw compile</span> triage.md</p>
+                            <p><span class="t-prompt">→</span> <span class="t-success">Compiled → triage.lock.yml ✓</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- IDE Grid -->
             <h3 class="subsection-title" id="ides">In Your Favorite Editor</h3>
             <p class="section-subtitle">Inline completions, chat, agent mode, plan mode, multi-file edits, and more — in every major IDE.</p>
@@ -429,6 +471,8 @@
                 <a href="https://github.com/features/copilot/cli" target="_blank" rel="noopener noreferrer">Copilot CLI</a>
                 <span>·</span>
                 <a href="https://github.com/features/copilot/agents" target="_blank" rel="noopener noreferrer">Coding Agents</a>
+                <span>·</span>
+                <a href="https://github.github.com/gh-aw/" target="_blank" rel="noopener noreferrer">Agentic Workflows</a>
             </p>
         </div>
     </footer>
