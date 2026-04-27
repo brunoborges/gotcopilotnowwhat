@@ -17,7 +17,6 @@
     <header class="hero">
         <div class="hero-bg"></div>
         <div class="hero-content">
-            <p class="hero-badge">GitHub Copilot Pro / Pro+</p>
             <h1>You Got GitHub Copilot...<br><span class="gradient-text">Now What?</span></h1>
             <p class="hero-subtitle">You just unlocked the most powerful AI coding platform on the planet.<br>It's <em>way</em> more than autocomplete in VS Code. Here's everything you can do.</p>
             <div class="hero-cta">
@@ -56,6 +55,8 @@
                         <li>Assign issues directly to <code>@copilot</code></li>
                         <li>Multi-agent support: Copilot, Claude, Codex side by side</li>
                         <li>Runs in sandboxed GitHub Actions environments</li>
+                        <li>Agents Tab: manage and monitor agent sessions per repo</li>
+                        <li>Self-review &amp; security scanning before opening PRs</li>
                         <li>Full code review workflow — you stay in control</li>
                     </ul>
                     <a href="https://github.com/features/copilot/agents" target="_blank" rel="noopener noreferrer" class="link-arrow">Explore Coding Agents →</a>
@@ -92,6 +93,8 @@
                         <li>Repo-aware: understands your project context</li>
                         <li>Custom agents for team-specific workflows</li>
                         <li>Delegate tasks with <code>/delegate</code></li>
+                        <li>Remote sessions: start with <code>--remote</code>, monitor from web or mobile</li>
+                        <li>BYOK &amp; local models: bring your own API keys or run Ollama locally</li>
                         <li>Works headlessly in CI/CD pipelines</li>
                     </ul>
                     <a href="https://github.com/features/copilot/cli" target="_blank" rel="noopener noreferrer" class="link-arrow">Get Copilot CLI →</a>
@@ -223,7 +226,7 @@
                 <div class="feature-highlight-content">
                     <span class="feature-tag">For Builders</span>
                     <h3>Copilot SDK — Build Your Own AI Tools</h3>
-                    <p>Embed Copilot's agentic runtime into <em>any</em> application. The SDK exposes the same multi-turn execution engine that powers Copilot CLI — with official support for Python, Node.js, Go, and .NET.</p>
+                    <p>Embed Copilot's agentic runtime into <em>any</em> application. The SDK exposes the same multi-turn execution engine that powers Copilot CLI — with official support for Python, Node.js, Go, .NET, and Java.</p>
                     <ul class="feature-list">
                         <li>Agentic execution loop with tool orchestration</li>
                         <li>Multi-model support (GPT, Claude, Gemini)</li>
@@ -232,7 +235,7 @@
                     </ul>
                     <a href="https://github.blog/news-insights/company-news/build-an-agent-into-any-app-with-the-github-copilot-sdk/" target="_blank" rel="noopener noreferrer" class="link-arrow">Learn about the SDK →</a>
                     <div class="community-sdk-note">
-                        <p>🌍 <strong>Community SDKs:</strong> Need Java, Rust, or Clojure? The <a href="https://github.com/copilot-community-sdk" target="_blank" rel="noopener noreferrer">Copilot Community SDK</a> project provides community-maintained SDKs for languages not yet officially supported.</p>
+                        <p>🌍 <strong>Community SDKs:</strong> Need Rust or Clojure? The <a href="https://github.com/copilot-community-sdk" target="_blank" rel="noopener noreferrer">Copilot Community SDK</a> project provides community-maintained SDKs for languages not yet officially supported.</p>
                     </div>
                 </div>
                 <div class="feature-highlight-visual">
@@ -250,7 +253,7 @@
                             <p><span class="t-keyword">await</span> client.<span class="t-cmd">start</span>();</p>
                             <p>&nbsp;</p>
                             <p><span class="t-keyword">const</span> session = <span class="t-keyword">await</span> client.<span class="t-cmd">createSession</span>({</p>
-                            <p>&nbsp;&nbsp;model: <span class="t-string">"claude-sonnet-4.5"</span></p>
+                            <p>&nbsp;&nbsp;model: <span class="t-string">"claude-sonnet-4.6"</span></p>
                             <p>});</p>
                             <p>&nbsp;</p>
                             <p><span class="t-keyword">await</span> session.<span class="t-cmd">send</span>({</p>
@@ -285,7 +288,7 @@
                     </div>
                     <h4>Anthropic Claude</h4>
                     <p>Exceptional reasoning, safety-focused, and excellent for complex multi-step problems.</p>
-                    <span class="model-badge">Sonnet · Opus</span>
+                    <span class="model-badge">Sonnet 4.6 · Opus 4.7</span>
                 </div>
 
                 <div class="model-card">
@@ -294,7 +297,7 @@
                     </div>
                     <h4>OpenAI GPT</h4>
                     <p>Versatile general-purpose models for coding, chat, analysis, and creative tasks.</p>
-                    <span class="model-badge">GPT-4o · GPT-5</span>
+                    <span class="model-badge">GPT-5 · GPT-5.5</span>
                 </div>
 
                 <div class="model-card">
@@ -303,10 +306,13 @@
                     </div>
                     <h4>OpenAI Codex</h4>
                     <p>Purpose-built for code. Autonomous agent that can write, test, and iterate on code.</p>
-                    <span class="model-badge">Codex · Coding Agent</span>
+                    <span class="model-badge">GPT-5.2-Codex · Coding Agent</span>
                 </div>
             </div>
 
+            <div class="models-note">
+                <p>🔑 <strong>Bring Your Own Key:</strong> Copilot CLI also supports <strong>BYOK mode</strong> — connect your own OpenAI, Anthropic, or Azure OpenAI endpoints, or run <strong>local models</strong> with Ollama. GitHub auth becomes optional, giving you full control over routing and compliance. <a href="https://docs.github.com/en/copilot/managing-copilot/configure-personal-settings/configuring-github-copilot-in-the-cli" target="_blank" rel="noopener noreferrer">Learn more →</a></p>
+            </div>
 
         </div>
     </section>
@@ -357,6 +363,11 @@
                     <div class="capability-icon">📖</div>
                     <h4>Documentation</h4>
                     <p>Generate docstrings, README files, API docs, and inline comments that actually make sense.</p>
+                </div>
+                <div class="capability-card">
+                    <div class="capability-icon">🖼️</div>
+                    <h4>Copilot Vision</h4>
+                    <p>Feed UI mockups, screenshots, or diagrams and get working HTML, CSS, and code — turn designs into functional prototypes instantly.</p>
                 </div>
             </div>
         </div>

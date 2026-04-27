@@ -13,8 +13,8 @@ Many developers subscribe to Copilot Pro or Pro+ and only ever use it as autocom
 - **Coding agents on GitHub.com** — assign issues to `@copilot`, Claude, or Codex and get PRs back
 - **A full AI agent in the terminal** (Copilot CLI) — natural language coding, task delegation, CI/CD automation
 - **Six supported IDEs** — VS Code, JetBrains, Visual Studio, Eclipse, Xcode, and the CLI
-- **Multiple AI models** — GPT, Claude, Gemini, and Codex, each optimized for different tasks
-- **An SDK** to build custom AI-powered tools — with official support for Python, Node.js, Go, and .NET, plus community SDKs for Java, Rust, and Clojure
+- **Multiple AI models** — GPT-5.5, Claude, Gemini, and Codex, each optimized for different tasks
+- **An SDK** to build custom AI-powered tools — with official support for Python, Node.js, Go, .NET, and Java, plus community SDKs for Rust and Clojure
 - **Agent mode, plan mode, multi-file edits, code review, test generation**, and more
 
 This page is the quick, actionable, post-purchase guide that doesn't exist elsewhere — a single page that shows developers the full scope of what they're paying for and how to get started with each surface.
