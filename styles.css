@@ -42,6 +42,74 @@ code {
     color: #ff7b72;
 }
 
+/* ===== Floating Table of Contents ===== */
+.toc {
+    position: fixed;
+    top: 50%;
+    left: 24px;
+    transform: translateY(-50%);
+    z-index: 100;
+    max-width: 180px;
+}
+
+.toc-heading {
+    font-size: 0.7em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #6e7681;
+    margin-bottom: 12px;
+}
+
+.toc ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.toc li {
+    margin-bottom: 6px;
+}
+
+.toc li a {
+    font-size: 0.8em;
+    font-weight: 500;
+    color: #8b949e;
+    text-decoration: none;
+    transition: color 0.2s;
+    display: block;
+    padding: 2px 0;
+}
+
+.toc li a:hover,
+.toc li a.active {
+    color: #f0f6fc;
+}
+
+.toc li a.active {
+    color: #a5b4fc;
+}
+
+.toc .toc-sub {
+    padding-left: 12px;
+}
+
+.toc .toc-sub a {
+    font-size: 0.75em;
+    color: #6e7681;
+}
+
+.toc .toc-sub a:hover,
+.toc .toc-sub a.active {
+    color: #a5b4fc;
+}
+
+@media (max-width: 1400px) {
+    .toc {
+        display: none;
+    }
+}
+
 /* ===== Hero ===== */
 .hero {
     position: relative;
